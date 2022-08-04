@@ -30,7 +30,7 @@ public class StatisticsMyDayController {
     }
 
     // 통계 테이블에 저장할 API
-    @Scheduled(cron = "0 0 5 * * *") // 초, 분, 시, 일, 월, 요일 / 매일 5시로 설정되어 있음
+    @Scheduled(cron = "0 0 01 * * *") // 초, 분, 시, 일, 월, 요일 / 매일 5시로 설정되어 있음
     @GetMapping("/api/statistics/mysave/day/save")
     public void createMyDailySave(){
         statisticsMyDayService.createMyDailySave();
