@@ -32,9 +32,9 @@ public class MailService {
 
         // 메일 내용
         simpleMailMessage.setText("비밀번호 변경 링크입니다. 3분 이내에 접속하여 비밀번호를 변경해 주세요. : "
-                + "https://www.tikkeeul.com/user/changePassword/"
+                + "https://www.tikkeeul.com/changePassword?accessToken="
                 + accessToken
-                + "&"
+                + "&username="
                 + username);
 
         // 메일 발송
